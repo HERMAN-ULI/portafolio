@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2? family= Righteous & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: 'Righteous', cursive;
+
+}
+
+:root {
+    --bg-color: #212534;
+    --second-bg-color: #273b4d;
+    --text-color: #91a1af;
+    --main-color: #5dddaa;
+}
+
+body {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4px;
+    background: var(--second-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 60;
+}
+
+.logo {
+    font-size: .6rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navar a {
+    font-size: .5rem;
+    color: var(--text-color);
+    margin-left: 7px;
+    transition: .3s;
+}
+
+.navar a:hover {
+    color: var(--main-color);
+
+}
