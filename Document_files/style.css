@@ -14,9 +14,8 @@
 :root {
     --bg-color: #212534;
     --second-bg-color: #273b4d;
-    --bg-color2: #151e2b;
     --text-color: #91a1af;
-    --main-color: #71a2da;
+    --main-color: #146cc4;
 }
 
 body {
@@ -133,7 +132,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--bg-color2);
+    background: var(--second-bg-color);
 }
 
 .img-about {
