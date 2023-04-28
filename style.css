@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2? family= Righteous & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 * {
     margin: 0;
@@ -7,8 +9,9 @@
     text-decoration: none;
     border: none;
     scroll-behavior: smooth;
-    font-family: 'Righteous', cursive;
-
+    /*font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Indie Flower', cursive;*/
+    font-family: 'Courgette', cursive;
 }
 
 :root {
@@ -16,7 +19,7 @@
     --second-bg-color: #273b4d;
     --bg-color2: #151e2b;
     --text-color: #91a1af;
-    --main-color: #71a2da;
+    --main-color: #0ecfdd;
 }
 
 body {
@@ -36,7 +39,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0 100px;
+    padding: 15px 100px;
     background: var(--second-bg-color);
     display: flex;
     justify-content: space-between;
@@ -73,10 +76,11 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5rem;
 }
 
 .img-home {
-    width: 35vw;
+    width: 30vw;
 
 }
 
@@ -114,15 +118,19 @@ section {
 }
 
 .btn {
+
     display: inline-block;
+    padding: .7rem 1rem;
     background: var(--main-color);
-    border-radius: 5rem;
-    box-shadow: 0 0 1rem var(--main-color);
+    border-radius: 30px;
+    box-shadow: 0 0 6rem var(--main-color);
     font-size: 1rem;
     color: var(--second-bg-color);
     letter-spacing: .2rem;
     font-weight: 600;
     transition: .5s ease;
+    mask: linear-gradient(white, transparent 50%);
+    animation: flip calc(var(--main-color)*2) infinite steps(2, end);
 }
 
 .btn:hover {
@@ -133,21 +141,129 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
     background: var(--bg-color2);
 }
 
-.img-about {
-    align-items: flex-start;
+.about-img img {
+    width: 35vw;
 }
 
+.heading {
+
+    font-size: 3rem;
+}
+
+
+
 .about-content h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+}
+
+.about-content p {
+    font-size: 1rem;
+    margin: 2rem 0 2rem;
+}
+
+/*
+.port-content {
+    padding: 10px;
+}
+
+.port-content p {
+    font-size: 1rem;
     font-weight: 700;
 }
 
-.about-content h1 {
+.port-content h1 {
     font-size: 2rem;
     font-weight: 700;
     line-height: 2;
     color: var(--main-color);
+}
+
+.port-content h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 2;
+    color: var(--text-color);
+}
+
+
+.portfolio {
+    gap: 7rem;
+    margin: 12px 34px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+}*/
+
+.skills {
+    margin: 2rem;
+}
+
+.skills h2 {
+    margin: 5rem;
+}
+
+.heading2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skills-container .lenguaje {
+    flex: 1 1 3rem;
+    background: var(--second-bg-color);
+    padding: 1rem 1rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5 ease;
+}
+
+.skills-container .lenguaje:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.skills-container {
+    font-size: .5rem;
+    color: var(--main-color);
+}
+
+.lenguaje i {
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.lenguaje h3 {
+    font-size: 2rem;
+    color: var(--text-color);
+    text-align: center;
+    margin: 1rem;
+}
+
+.lenguaje p {
+    font-size: 1rem;
+    color: var(--text-color);
+    text-align: justify;
+    margin: 1rem 0 2rem;
+}
+
+.htmlimg {
+    width: 9rem;
+    height: 10rem;
 }
